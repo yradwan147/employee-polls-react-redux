@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Leaderboard /> matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="leaderboard"
+  >
+    <h1>
+      Leaderboard
+    </h1>
+    <table>
+      <thead>
+        <tr>
+          <th>
+            #
+          </th>
+          <th>
+            Employee
+          </th>
+          <th>
+            Asked
+          </th>
+          <th>
+            Answered
+          </th>
+          <th>
+            Total
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          data-testid="leader-sarahedo"
+        >
+          <td>
+            1
+          </td>
+          <td
+            class="leader-name"
+          >
+            <div
+              class="avatar avatar-fallback sm"
+            >
+              S
+            </div>
+            <span>
+              Sarah Edo
+            </span>
+          </td>
+          <td>
+            3
+          </td>
+          <td>
+            2
+          </td>
+          <td>
+            <strong>
+              5
+            </strong>
+          </td>
+        </tr>
+        <tr
+          data-testid="leader-tylermcginnis"
+        >
+          <td>
+            2
+          </td>
+          <td
+            class="leader-name"
+          >
+            <div
+              class="avatar avatar-fallback sm"
+            >
+              T
+            </div>
+            <span>
+              Tyler McGinnis
+            </span>
+          </td>
+          <td>
+            1
+          </td>
+          <td>
+            1
+          </td>
+          <td>
+            <strong>
+              2
+            </strong>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</DocumentFragment>
+`;
