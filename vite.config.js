@@ -40,6 +40,17 @@ export default defineConfig({
     include: /src\/.*\.jsx?$/,
     exclude: [],
   },
+  // Vite's dep-scan and prebundle steps use a separate esbuild instance
+  // than the dev-server transform pipeline above; without this block,
+  // App.js / Home.js / Login.js etc. (which contain JSX inside .js files
+  // for legacy reasons) trip "The JSX syntax extension is not currently
+  // enabled" at startup. The .js -> jsx loader override here covers both
+  // code paths (matches the reviewer's reproduction).
+  optimizeDeps: {
+    esbuildOptions: {
+      loader: { ".js": "jsx" },
+    },
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
